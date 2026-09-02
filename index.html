@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحدي الـ 50 سؤال - كود و APIs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>تحدي الـ 50 سؤال</h1>
+            <p>اختبر معلوماتك في الـ JavaScript و APIs</p>
+        </header>
+
+        <main>
+            <div class="quiz-container" id="quiz">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress"></div>
+                </div>
+                <div class="question-container">
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                </div>
+                <div class="controls">
+                    <button id="prev-btn" class="btn">السابق</button>
+                    <button id="next-btn" class="btn">التالي</button>
+                    <button id="submit-btn" class="btn hidden">إنهاء الاختبار</button>
+                </div>
+            </div>
+
+            <div class="results-container hidden" id="results">
+                <h2>نتيجتك</h2>
+                <div class="score">
+                    <p>الإجابات الصحيحة: <span id="correct-answers">0</span></p>
+                    <p>الإجابات الخاطئة: <span id="wrong-answers">0</span></p>
+                    <p>النسبة المئوية: <span id="percentage">0%</span></p>
+                </div>
+                <button id="restart-btn" class="btn">إعادة الاختبار</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
